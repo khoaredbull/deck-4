@@ -1,0 +1,225 @@
+.main-content{
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .main-content-left{
+        background-color: @bg-color-2;
+        padding-top: 40px;
+        overflow-y: scroll;
+        .section-product{
+            .container{
+                .product-wrapper{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 32px;
+                    padding-left: 40px;
+                    padding-right: 32px;
+                    .product-left{  
+                        & .product-image:first-child .product-image-item:nth-child(3), 
+                        & .product-image:first-child .product-image-title:nth-child(4), 
+                        & .product-image:nth-child(2) .product-image-item:nth-child(3), 
+                        & .product-image:nth-child(2) .product-image-title:nth-child(4), 
+                        & .product-image:nth-child(3) .product-image-item:nth-child(3), 
+                        & .product-image:nth-child(3) .product-image-title:nth-child(4){
+                            display: none;
+                        }                
+                        & .product-image:nth-child(2) .product-image-item{
+                            padding-top: 98.1%;
+                            background-image: url(../images/Mask-by-Background1.jpg);
+                        }
+                        & .product-image:nth-child(3) .product-image-item{
+                            padding-top: 63.29%;
+                            background-image: url(../images/Mask-by-Background2.jpg);
+                        }
+                        & .product-image:nth-child(4) .product-image-item{
+                            padding-top: 63.29%;
+                            background-image: url(../images/Mask-by-Background6.jpg);
+                        }
+                        & .product-image:nth-child(5) .product-image-item{
+                            padding-top: 98.1%;
+                            background-image: url(../images/Mask-by-Background2tab.jpg);
+                        }
+                        & .product-image:nth-child(6) .product-image-item{
+                            padding-top: 63.29%;
+                            background-image: url(../images/Mask-by-Background8.jpg);
+                        }
+                        & .product-image:nth-child(7){
+                            display: none;
+                        }
+                    }
+                    .product-right{
+                        .product-image{
+                            .product-image-item{
+                                background-image: url(../images/Mask-by-Background7.jpg);
+                                padding-top: 98.1%;
+                            }
+                        }
+                        & .product-image:first-child .product-image-item:nth-child(3), 
+                        & .product-image:first-child .product-image-title:nth-child(4), 
+                        & .product-image:nth-child(2) .product-image-item:nth-child(3), 
+                        & .product-image:nth-child(2) .product-image-title:nth-child(4), 
+                        & .product-image:nth-child(3) .product-image-item:nth-child(3), 
+                        & .product-image:nth-child(3) .product-image-title:nth-child(4){
+                            display: none;
+                        }  
+                        & .product-image:nth-child(2) .product-image-item{
+                            padding-top: 63.29%;
+                            background-image: url(../images/Mask-by-Background3.jpg);
+                        }
+                        & .product-image:nth-child(3) .product-image-item{
+                            padding-top: 98.1%;
+                            background-image: url(../images/Mask-by-Background4.jpg);
+                        }
+                        & .product-image:nth-child(4) .product-image-item{
+                            padding-top: 98.1%;
+                            background-image: url(../images/Mask-by-Background8.jpg);
+                        }
+                        & .product-image:nth-child(5) .product-image-item{
+                            padding-top: 63.29%;
+                            background-image: url(../imagesMask-by-Background5.jpg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.product-image-item{
+    width: 100%;
+    padding-top: 63.29%;
+    background-image: url(../images/Mask-by-Background5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+}
+.product-image-title{
+    font: @f-size-5 lato-semibold;
+    color: @f-color-1;
+    padding: 21px 0px 41px 0px;
+    display: block;
+    line-height: 1.5;
+}
+.image-item-inner{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}                        
+@media screen and (max-width: 1023px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        .main-content-left{
+            padding: 0px 20px;
+            order: 1;
+            padding-top: 71px;
+            width: 100%;
+            .section-product{
+                .container{
+                    .product-wrapper{
+                        padding: 0px;
+                        grid-column-gap: 16px;
+                        .product-left{
+                            & .product-image:nth-child(1) .product-image-item{
+                                padding-top: 84.27%;
+                                background-image: url(../images/Mask-by-Background1tab.jpg);
+                            }
+                            & .product-image:nth-child(2) .product-image-item{
+                                padding-top: 77.53%;
+                                background-image: url(../images/Mask-by-Background2tab.jpg);
+                            }
+                            & .product-image:nth-child(3) .product-image-item{
+                                padding-top: 84.27%;
+                                background-image: url(../images/Mask-by-Background4tab.jpg);
+                            }
+                            & .product-image:first-child .product-image-item:nth-child(3), 
+                            & .product-image:first-child .product-image-title:nth-child(4), 
+                            & .product-image:nth-child(2) .product-image-item:nth-child(3), 
+                            & .product-image:nth-child(2) .product-image-title:nth-child(4), 
+                            & .product-image:nth-child(3) .product-image-item:nth-child(3), 
+                            & .product-image:nth-child(3) .product-image-title:nth-child(4){
+                                display: block;
+                        }  
+                            & .product-image:first-child .product-image-item:nth-child(1), 
+                            & .product-image:first-child .product-image-title:nth-child(2), 
+                            & .product-image:nth-child(2) .product-image-item:nth-child(1), 
+                            & .product-image:nth-child(2) .product-image-title:nth-child(2), 
+                            & .product-image:nth-child(3) .product-image-item:nth-child(1), 
+                            & .product-image:nth-child(3) .product-image-title:nth-child(2){
+                                display: none;
+                        }  
+                            .product-image{
+                                .product-image-title{
+                                    font-size: @f-size-7;
+                                }
+                            }
+                        }
+                        .product-right{
+                            & .product-image:nth-child(1) .product-image-item{
+                                padding-top: 46.35%;
+                                background-image: url(../images/Image.jpg);
+                            }
+                            & .product-image:nth-child(2) .product-image-item{
+                                padding-top: 84.27%;
+                                background-image: url(../images/Mask-by-Background3tab.jpg);
+                            }
+                            & .product-image:nth-child(3) .product-image-item{
+                                padding-top: 120.5%;
+                                background-image: url(../images/Mask-by-Background5tab.jpg);
+                            }
+                            & .product-image:first-child .product-image-item:nth-child(3), 
+                            & .product-image:first-child .product-image-title:nth-child(4), 
+                            & .product-image:nth-child(2) .product-image-item:nth-child(3), 
+                            & .product-image:nth-child(2) .product-image-title:nth-child(4), 
+                            & .product-image:nth-child(3) .product-image-item:nth-child(3), 
+                            & .product-image:nth-child(3) .product-image-title:nth-child(4){
+                                display: block;
+                            }  & .product-image:first-child .product-image-item:nth-child(1), 
+                            & .product-image:first-child .product-image-title:nth-child(2), 
+                            & .product-image:nth-child(2) .product-image-item:nth-child(1), 
+                            & .product-image:nth-child(2) .product-image-title:nth-child(2), 
+                            & .product-image:nth-child(3) .product-image-item:nth-child(1), 
+                            & .product-image:nth-child(3) .product-image-title:nth-child(2){
+                                display: none;
+                            }  
+                            .product-image{
+                                .product-image-title{
+                                    font-size: @f-size-7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .main-content .main-content-left {
+        padding-top: 77px;
+        padding-bottom: 22px;
+        .section-product .container 
+        .product-wrapper {
+            display: block;
+            .product-left{
+                .product-image{
+                    display: none;
+                }
+                & .product-image:nth-child(7){
+                    display: block;
+                    .product-image-item{           
+                       padding-top: 101.52%;
+                       background-image: url(../images/Image1bobile.jpg);                
+                   }
+                }
+            }
+            .product-right{
+                display: none;
+            }
+        }
+    }
+}
